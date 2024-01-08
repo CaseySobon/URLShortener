@@ -1,4 +1,4 @@
-# URLShortener
+# URL Shortener
 This is a simple URL shortener built with Flask and SQLAlchemy.
 
 # Table of Contents
@@ -19,9 +19,19 @@ Implement the URL shortener API with two main functions:
 The project should contain a data storage method. 
 The project should utilize dependencies such that it can shared without additional system configuration. 
 
+### Bonus Features
+1. Optional ability to create a personal URL.
+2. Recalls previously shortened URLs if the original URL was already shortened.
+3. Option to force create a new URL if URL was already shortened.
+4. Easy copy button for URLs.
 
-<details>
-<summary>## Getting Started</summary>
+<br>  
+
+![image](https://github.com/CaseySobon/URLShortener/assets/96227583/9208a99b-e309-4314-8e86-cde586f3e802)
+
+
+<details id="getting-started">
+<summary> <h2> Getting Started </h2> </summary>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -85,6 +95,20 @@ Follow these steps to run this project on your local machine:
 
     The application should now be running at `http://localhost:5000`.
 </details>
+
+<details id="Code-Explanation">
+<summary><h2>Code Explanation</h2></summary>
+
+<details id="app.py">
+<summary><h3>app.py</h3></summary>
+
+<details id="homepage_style">
+<summary><h3>homepage_style.css</h3></summary>
+
+<details id="homepage_interactions.js">
+<summary><h3>homepage_interactions.js</h3></summary>
+
+
 ## Built With
 
 - [Flask](https://flask.palletsprojects.com/) - The web framework used
