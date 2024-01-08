@@ -4,6 +4,10 @@ This is a simple URL shortener built with Flask and SQLAlchemy.
 # Table of Contents
 1. [Project Scope](#project-scope)
 2. [Getting Started](#getting-started)
+3. [Code Explanation](#Code-Explanation)
+    - [app.py](#apppy)
+    - [homepage_style.css](#homepage_style)
+    - [homepage_interactions.js](#homepage_interactionsjs)
 
 
 
@@ -101,7 +105,7 @@ Follow these steps to run this project on your local machine:
 
 
 
-</details>
+
 
 <details id="app.py">
 <summary><h3>app.py</h3></summary>
@@ -119,6 +123,7 @@ Follow these steps to run this project on your local machine:
 <details id="homepage_interactions.js">
 <summary><h3>homepage_interactions.js</h3></summary>
 
+</details>
 </details>
 ## Built With
 
