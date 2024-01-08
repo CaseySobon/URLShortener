@@ -20,7 +20,8 @@ The project should contain a data storage method.
 The project should utilize dependencies such that it can shared without additional system configuration. 
 
 
-## Getting Started
+<details>
+<summary>## Getting Started</summary>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -83,7 +84,7 @@ Follow these steps to run this project on your local machine:
     ```
 
     The application should now be running at `http://localhost:5000`.
-
+</details>
 ## Built With
 
 - [Flask](https://flask.palletsprojects.com/) - The web framework used
