@@ -99,16 +99,27 @@ Follow these steps to run this project on your local machine:
 <details id="Code-Explanation">
 <summary><h2>Code Explanation</h2></summary>
 
+
+
+</details>
+
 <details id="app.py">
 <summary><h3>app.py</h3></summary>
 
+
+
+</details>
 <details id="homepage_style">
 <summary><h3>homepage_style.css</h3></summary>
 
+
+
+
+</details>
 <details id="homepage_interactions.js">
 <summary><h3>homepage_interactions.js</h3></summary>
 
-
+</details>
 ## Built With
 
 - [Flask](https://flask.palletsprojects.com/) - The web framework used
