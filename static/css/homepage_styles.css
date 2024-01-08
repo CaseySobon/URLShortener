@@ -1,0 +1,57 @@
+/* This is the body style info which can set some visual parameters for all elements in the body */
+body {
+    background-color: #f0f0f0; /* sets a light gray background color */
+    font-family: Arial, sans-serif; /* sets the default font */
+    margin: 0; /* removes the default margin */
+    padding: 0; /* removes the default padding */
+    
+}
+
+/* This is the main title of the page */
+h1 {
+    text-align: center;
+}
+/* This is the sub  title for the different functions */
+h2 {
+    text-align: center;
+}
+/* This is the text that will be made when running the functions */
+p {
+    text-align: center;
+}
+/* This is the box that will seperate the functions */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Set a fixed width */
+    max-width: 900px; /* Optional: Set a maximum width */
+    display: block;
+}
+/* This is the input box */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* This is the input box text */
+input[type="text"] {
+    width: 300px;  
+    height: 30px;
+    margin-bottom: 10px;
+}
+/* This is the line to create a new short URL for an existing URL  */
+.checkbox-line {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+/* This is the output text line for both shortening and expanding */
+#short-url, #original-url {
+    text-align: center;
+}
+

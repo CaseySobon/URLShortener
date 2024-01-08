@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Set the title of the webpage -->
+    <title>URL shortener</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage_styles.css') }}">
+    <!-- Link to the JavaScript file for interactivity -->
+    <script src="{{ url_for('static', filename='js/homepage_interactions.js') }}"></script>
+</head>
+<body><!-- Contains the content of the document -->
+    <!-- Display a heading -->
+    <h1>FRESH SQUEEZED URLs</h1>
+    <!-- Container for the URL shortening form -->
+    <div class="box">
+        <!-- Display a subheading -->
+        <h2> Submit URL For Squeezing</h2>
+        <!-- Form for submitting URLs -->
+        <form method="POST">
+            <!-- Text input fields for the URL and optional custom short URL -->
+            <input type="text" name="url" placeholder="URL">
+            <input type="text" name="custom_short_url" placeholder="(optional) Choose name">
+            <!-- Checkbox to create a new short URL for an existing URL -->
+            <div class="checkbox-line">
+                <input type="checkbox" name="new_short_url" value="true">
+                <span>Create new short URL for existing URL</span>
+            </div>
+            <!-- Submit button for the form -->
+            <input type="submit" value="Shorten">
+            <!-- Conditional blocks to display messages -->
+            {% if existing %}
+            <p>This URL has already been shortened. The existing short URL is: {{ short_url }}. Please choose another name.</p>
+            {% endif %}
+            {% if shorten_error %}
+            <p>{{ shorten_error }}</p>
+            {% endif %}
+        </form>
+        <!-- Conditional block to display the short URL -->
+        {% if short_url and not existing %}
+        <div id="short-url">
+            <a href="{{ short_url }}">{{ short_url }}</a>
+            <button onclick="copyToClipboard('{{ short_url }}')">Copy</button>
+        </div>
+        {% endif %}
+    </div>
+    <!-- Similar structure for the URL expanding form -->
+    <div class="box">
+        <h2>Expand Short URL</h2>
+        <form method="POST">
+            <input type="text" name="short_url" placeholder="Short URL" >
+            <input type="submit" value="Expand">
+        </form>
+        <!-- Conditional block to display the original URL or an error message -->
+        {% if url %}
+        <div id="original-url">
+            <a href="{{ url }}">{{ url }}</a>
+            <button onclick="copyToClipboard('{{ url }}')">Copy</button>
+        </div>
+        {% elif expand_error %}
+        <p>{{ expand_error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
