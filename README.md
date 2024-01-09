@@ -459,6 +459,10 @@ function copyToClipboard(text) {
 
 The development of the URL shortener application can be broken down into two major components: the `backend`, and the `frontend`.
 
+The main focus was to reach the mandatory functionality of the scope and ensure things would run seamlessly with basic functionality. This was done incrementally, taking each part of the project separately and then integrating everything together one part at a time. This allowed for easy testing and didn't require any long debugging process at the end of the project.
+
+Some additional functionality was included to ensure there was some semblance of a useful application. This was kept to a minimum but could have easily been expanded in many ways. One way to make this more useful would be the implementation of different users and online server for the data base. This was considered too far out of the reach of the scope give for now but the framework was designed to ensure this could be done in the future.
+
 
 <details id="backend">
 <summary> <h3> Backend </h3> </summary>
